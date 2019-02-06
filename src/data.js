@@ -1,7 +1,7 @@
 module.exports = {
     "data": {
         "header":{
-            "name":"David Portocarrero Caicedo",
+            "name":"DAVID PORTOCARRERO CAICEDO",
             "profession": "Software Engineering Specialist",
             "location": {
                 "country": "Colombia",
@@ -78,55 +78,55 @@ module.exports = {
                 },
                 "hardSkills":[
                     {
-                        "name": "coding",
+                        "name": "Coding",
                         "level": 4
                     },
                     {
-                        "name": "databases",
+                        "name": "Databases",
                         "level": 4
                     },
                     {
-                        "name": "ux",
+                        "name": "UX",
                         "level": 3
                     },
                     {
-                        "name": "designThinking",
+                        "name": "Design Thinking",
                         "level": 4
                     }
                 ],
                 "softSkills":[
                     {
-                        "name":"teamwork",
+                        "name":"Teamwork",
                         "level": 4
                     },
                     {
-                        "name":"criticalThinking",
+                        "name":"Critical Thinking",
                         "level": 4,
                     },
                     {
-                        "name":"communication",
+                        "name":"Communication",
                         "level": 4
                     }
                 ],
                 "languages":[
                     {
-                        "name":"java",
+                        "name":"Java",
                         "level": 4
                     },
                     {
-                        "name":"javascript",
+                        "name":"Javascript",
                         "level": 4
                     },
                     {
-                        "name":"php",
+                        "name":"PHP",
                         "level": 4
                     },
                     {
-                        "name":"sql",
+                        "name":"SQL",
                         "level": 3
                     },
                     {
-                        "name":"cSharp",
+                        "name":"CSharp",
                         "level": 2
                     },
                     {
