@@ -8,10 +8,16 @@ class Header extends Component{
         const location = `${this.props.location.city}, ${this.props.location.country}`;
 
         return (
-            <div className="Header">
-                <Title text= {this.props.name}/>
-                <Subtitle text= {this.props.profession}/>
-                <Location location= {location}/>
+            <div className="Header mdc-layout-grid__cell--span-12">
+                <div class="mdc-layout-grid__inner">
+                    <div className="mdc-layout-grid__cell--span-9">
+                        <Title text= {this.props.name}/>
+                        <Subtitle text= {this.props.profession}/>
+                    </div>
+                    <div className="mdc-layout-grid__cell--span-3">
+                        <Location location= {location}/>
+                    </div>
+                </div>
             </div>
         )
     }

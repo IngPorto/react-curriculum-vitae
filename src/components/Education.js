@@ -5,7 +5,7 @@ import EducationItem from './EducationItem';
 function Education(props){
     const titulo= 'Education';
     return (
-        <div className="Education">
+        <div className="Education mdc-layout-grid__cell--span-12">
             <TopicSection title={titulo}>
                 {
                     /* @Possible_Enhance

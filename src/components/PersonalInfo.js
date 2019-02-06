@@ -11,7 +11,7 @@ function PersonalInfo(props){
     const linkedinTitle = 'Linkedin';
     const idcardDescription = `${props.data.id.number} de ${props.data.id.city}`;
     return(
-        <div className="PersonalInfo">
+        <div className="PersonalInfo mdc-layout-grid__cell--span-12">
             <TopicSection title={titulo}>
                 <SectionTitleShortDescription
                     title={mobileTitle}
