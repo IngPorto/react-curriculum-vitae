@@ -8,6 +8,11 @@ import Resume from './components/Resume';
 import ProfessionalExperience from './components/ProfessionalExperience';
 import Education from './components/Education';
 import Hobbie from './components/Hobbie';
+import Complementary from './containers/Complementary';
+import PersonalInfo from './components/PersonalInfo';
+import HardSkills from './components/HardSkills';
+import SoftSkills from './components/SoftSkills';
+import Languages from './components/Languages';
 
 class Main extends Component{
     render(){
@@ -25,12 +30,12 @@ class Main extends Component{
                         <Education data={data.body.principal.education}/>
                         <Hobbie data={data.body.principal.hobbies}/>
                     </Principal>
-                    {/*<Complementary>
-                        <PersonalInfo />
-                        <HardSkills />
-                        <SoftSkills />
-                        <Languages />
-                    </Complementary>*/}
+                    <Complementary>
+                        <PersonalInfo data={data.body.complementary.personalInfo} />
+                        <HardSkills data={data.body.complementary.hardSkills}/>
+                        <SoftSkills data={data.body.complementary.softSkills}/>
+                        <Languages data={data.body.complementary.languages}/>
+                    </Complementary>
                 </Body>
             </div>
         )
