@@ -67,8 +67,8 @@ module.exports = {
             },
             "complementary":{
                 "personalInfo":{
-                    "mobile": "",
-                    "email": "",
+                    "mobile": "(57) 3157705xxx",
+                    "email": "ing.portocarrero@gmail.com",
                     "id": {
                         "number": "1.14x.xxx.xxx",
                         "city": "Santiago de Cali"
@@ -76,27 +76,72 @@ module.exports = {
                     "git":"https://github.com/ingporto",
                     "linkedin": "https://linkedin.com/in/davidportocarrero"
                 },
-                "hardSkills":{
-                    "coding": 4,
-                    "databases": 4,
-                    "ux": 3,
-                    "designThinking": 4
-                },
-                "softSkills":{
-                    "teamwork": 4,
-                    "criticalThinking": 4,
-                    "communication": 4
-                },
-                "languages":{
-                    "java": 4,
-                    "javascript": 4,
-                    "php": 4,
-                    "sql": 3,
-                    "cSharp": 2,
-                    "python": 2,
-                    "spanish": 5,
-                    "english": 3
-                }
+                "hardSkills":[
+                    {
+                        "name": "coding",
+                        "level": 4
+                    },
+                    {
+                        "name": "databases",
+                        "level": 4
+                    },
+                    {
+                        "name": "ux",
+                        "level": 3
+                    },
+                    {
+                        "name": "designThinking",
+                        "level": 4
+                    }
+                ],
+                "softSkills":[
+                    {
+                        "name":"teamwork",
+                        "level": 4
+                    },
+                    {
+                        "name":"criticalThinking",
+                        "level": 4,
+                    },
+                    {
+                        "name":"communication",
+                        "level": 4
+                    }
+                ],
+                "languages":[
+                    {
+                        "name":"java",
+                        "level": 4
+                    },
+                    {
+                        "name":"javascript",
+                        "level": 4
+                    },
+                    {
+                        "name":"php",
+                        "level": 4
+                    },
+                    {
+                        "name":"sql",
+                        "level": 3
+                    },
+                    {
+                        "name":"cSharp",
+                        "level": 2
+                    },
+                    {
+                        "name":"python",
+                        "level": 2
+                    },
+                    {
+                        "name":"Spanish",
+                        "level": 5
+                    },
+                    {
+                        "name":"English",
+                        "level": 3
+                    }
+                ]
             }
         }
     }
