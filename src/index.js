@@ -17,26 +17,32 @@ import Languages from './components/Languages';
 class Main extends Component{
     render(){
         return (
-            <div>
-                <Header 
-                    name= {data.header.name}
-                    profession= {data.header.profession}
-                    location= {data.header.location}
-                />
-                <Body>
-                    <Principal>
-                        <Resume text={data.body.principal.resume}/>
-                        <ProfessionalExperience data={data.body.principal.professionalExperience}/>
-                        <Education data={data.body.principal.education}/>
-                        <Hobbie data={data.body.principal.hobbies}/>
-                    </Principal>
-                    <Complementary>
-                        <PersonalInfo data={data.body.complementary.personalInfo} />
-                        <HardSkills data={data.body.complementary.hardSkills}/>
-                        <SoftSkills data={data.body.complementary.softSkills}/>
-                        <Languages data={data.body.complementary.languages}/>
-                    </Complementary>
-                </Body>
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-12">
+                        <div class="mdc-layout-grid__inner">
+                            <Header 
+                                name= {data.header.name}
+                                profession= {data.header.profession}
+                                location= {data.header.location}
+                            />
+                            <Body>
+                                <Principal>
+                                    <Resume text={data.body.principal.resume}/>
+                                    <ProfessionalExperience data={data.body.principal.professionalExperience}/>
+                                    <Education data={data.body.principal.education}/>
+                                    <Hobbie data={data.body.principal.hobbies}/>
+                                </Principal>
+                                <Complementary>
+                                    <PersonalInfo data={data.body.complementary.personalInfo} />
+                                    <HardSkills data={data.body.complementary.hardSkills}/>
+                                    <SoftSkills data={data.body.complementary.softSkills}/>
+                                    <Languages data={data.body.complementary.languages}/>
+                                </Complementary>
+                            </Body>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
