@@ -15,7 +15,8 @@ function LevelProgressGenerator(props){
         ]
     const level = props.level;
     return(
-        <div>
+        <div className="LevelProgressGenerator">
+            <div className="imgCarril">
             {
                 /**
                  * @Possible_Enhance
@@ -49,6 +50,7 @@ function LevelProgressGenerator(props){
                     )
                 })
             }
+            </div>
             <p>{aptness[level-1]}</p>
         </div>
     )
