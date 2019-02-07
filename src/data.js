@@ -61,8 +61,8 @@ module.exports = {
                     }
                 ],
                 "hobbies":[
-                    "Drawing/illustration", 
-                    "Playing guitar"
+                    "Draw/illustration", 
+                    "Play guitar"
                 ]
             },
             "complementary":{
@@ -130,7 +130,7 @@ module.exports = {
                         "level": 2
                     },
                     {
-                        "name":"python",
+                        "name":"Python",
                         "level": 2
                     },
                     {
