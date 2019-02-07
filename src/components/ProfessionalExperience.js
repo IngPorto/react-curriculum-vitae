@@ -6,7 +6,7 @@ function ProfessionalExperience(props){
     const titulo = 'Professional Experience';
 
     return (
-        <div className="ProfessionalExperience">
+        <div className="ProfessionalExperience mdc-layout-grid__cell--span-12">
             <TopicSection title={titulo}>
                 {
                     /* @Possible_Enhance

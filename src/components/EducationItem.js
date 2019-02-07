@@ -3,7 +3,7 @@ import SectionDateTitleDescription from "./SectionDateTitleDescription";
 
 function EducationItem(props){
     return(
-        <div className="EducationItem">
+        <div className="EducationItem mdc-card mdc-card__secundary-action" tabindex="0">
             <SectionDateTitleDescription {...props} />
             <p>
                 {

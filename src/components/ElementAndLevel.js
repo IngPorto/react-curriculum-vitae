@@ -5,7 +5,9 @@ function ElementAndLevel(props){
     return(
         <div className="ElementAndLevel">
             <p>{props.name}</p>
-            <LevelProgressGenerator level={props.level}/>
+            <div className="ElementAndLevel_LevelProgress_Container">
+                <LevelProgressGenerator level={props.level}/>
+            </div>
         </div>
     )
 }

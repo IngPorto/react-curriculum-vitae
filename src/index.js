@@ -17,26 +17,49 @@ import Languages from './components/Languages';
 class Main extends Component{
     render(){
         return (
-            <div>
-                <Header 
-                    name= {data.header.name}
-                    profession= {data.header.profession}
-                    location= {data.header.location}
-                />
-                <Body>
-                    <Principal>
-                        <Resume text={data.body.principal.resume}/>
-                        <ProfessionalExperience data={data.body.principal.professionalExperience}/>
-                        <Education data={data.body.principal.education}/>
-                        <Hobbie data={data.body.principal.hobbies}/>
-                    </Principal>
-                    <Complementary>
-                        <PersonalInfo data={data.body.complementary.personalInfo} />
-                        <HardSkills data={data.body.complementary.hardSkills}/>
-                        <SoftSkills data={data.body.complementary.softSkills}/>
-                        <Languages data={data.body.complementary.languages}/>
-                    </Complementary>
-                </Body>
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div className={`
+                            mdc-layout-grid__cell--span-2-desktop
+                            mdc-layout-grid__cell--span-0-tablet 
+                            mdc-layout-grid__cell--span-0-phone 
+                    `}>
+                    </div>
+                    <div className={`
+                            mdc-layout-grid__cell--span-8-desktop
+                            mdc-layout-grid__cell--span-12-tablet 
+                            mdc-layout-grid__cell--span-12-phone 
+                    `}>
+                        <div className="mdc-layout-grid__inner">
+                            <div className="principal_layout mdc-layout-grid__cell--span-12">
+                                <div className="mdc-layout-grid__inner">
+                                    <Header 
+                                        name= {data.header.name}
+                                        profession= {data.header.profession}
+                                        location= {data.header.location}
+                                    />
+                                    <Body>
+                                        <Principal>
+                                            <Resume text={data.body.principal.resume}/>
+                                            <ProfessionalExperience data={data.body.principal.professionalExperience}/>
+                                            <Education data={data.body.principal.education}/>
+                                            <Hobbie data={data.body.principal.hobbies}/>
+                                        </Principal>
+                                        <Complementary>
+                                            <PersonalInfo data={data.body.complementary.personalInfo} />
+                                            <HardSkills data={data.body.complementary.hardSkills}/>
+                                            <SoftSkills data={data.body.complementary.softSkills}/>
+                                            <Languages data={data.body.complementary.languages}/>
+                                        </Complementary>
+                                    </Body>
+                                    <div className="Footer mdc-layout-grid__cell--span-12">
+                                        <p>This page is created with <a href="https://reactjs.org/" target="_blank">ReactJS</a> and <a href="https://material.io" target="_blank">Material Design Web</a> by me ;)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

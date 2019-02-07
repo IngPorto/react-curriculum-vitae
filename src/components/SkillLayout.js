@@ -4,15 +4,17 @@ import ElementAndLevel from './ElementAndLevel';
 
 function SkillLayout(props){
     return(
-        <TopicSection title={props.title}>
-            {
-                props.data.map(element =>{
-                    return(
-                        <ElementAndLevel {...element} />
-                    )
-                })
-            }
-        </TopicSection>
+        <div className="SkillLayout">
+            <TopicSection title={props.title}>
+                {
+                    props.data.map(element =>{
+                        return(
+                            <ElementAndLevel {...element} />
+                        )
+                    })
+                }
+            </TopicSection>
+        </div>
     )
 }
 

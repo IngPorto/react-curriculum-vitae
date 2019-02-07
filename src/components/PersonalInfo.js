@@ -25,14 +25,20 @@ function PersonalInfo(props){
                     title={idcardTitle}
                     description={idcardDescription} 
                 />
-                <SectionTitleShortDescription
-                    title={githubTitle}
-                    description={props.data.git} 
-                />
-                <SectionTitleShortDescription
-                    title={linkedinTitle}
-                    description={props.data.linkedin} 
-                />
+
+                <a href={props.data.git} target="_blank">
+                    <SectionTitleShortDescription
+                        title={githubTitle}
+                        description={props.data.git} 
+                    />
+                </a>
+
+                <a href={props.data.linkedin} target="_blank">
+                    <SectionTitleShortDescription
+                        title={linkedinTitle}
+                        description={props.data.linkedin} 
+                    />
+                </a>
             </TopicSection>
         </div>
     )
