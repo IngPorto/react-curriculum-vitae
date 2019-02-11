@@ -1,7 +1,11 @@
 {
   "name": "react-curriculum-vitae",
   "version": "1.0.0",
-  "description": "",
+  "description": "Single Page Application describing my own professional CV.",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/IngPorto/react-curriculum-vitae.git"
+  },
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
