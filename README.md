@@ -24,6 +24,14 @@ $ npm run build:local
 
 Now you can access to _dist/index.html_ 
 
+## Global access
+
+> [https://davidportocarrero.now.sh/](https://davidportocarrero.now.sh/)
+
+### Screenshots
+
+![screenshots](./statics/project-views.jpg)
+
 ### Note: Bug fixed
 
 Trying to install webpack from the [getting-started](https://webpack.js.org/guides/getting-started/) the console print out an Error message. To solve this, I had to run the next command:
