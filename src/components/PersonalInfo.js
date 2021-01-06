@@ -1,15 +1,17 @@
 import React from 'react';
 import TopicSection from '../containers/TopicSection';
 import SectionTitleShortDescription from './SectionTitleShortDescription';
+import config from '../config';
+const dictionary = (require("../lang/" + config.lang + ".js")).default;
 
 function PersonalInfo(props){
-    const titulo = 'Personal info';
-    const mobileTitle = 'Mobile';
-    const emailTitle = 'E-mail';
-    const idcardTitle = 'Id-card';
-    const githubTitle = 'GitHub';
-    const linkedinTitle = 'Linkedin';
-    const idcardDescription = `${props.data.id.number} de ${props.data.id.city}`;
+    const titulo = dictionary.personal_info;
+    const mobileTitle = dictionary.mobile;
+    const emailTitle = dictionary.email;
+    const idcardTitle = dictionary.id;
+    const githubTitle = dictionary.git;
+    const linkedinTitle = dictionary.linkedin;
+    const idcardDescription = `${props.data.id.number} ${dictionary.from} ${props.data.id.city}`;
     return(
         <div className="PersonalInfo">
             <TopicSection title={titulo}>
@@ -21,17 +23,19 @@ function PersonalInfo(props){
                     title={emailTitle}
                     description={props.data.email} 
                 />
+                { /* 
                 <SectionTitleShortDescription
                     title={idcardTitle}
                     description={idcardDescription} 
                 />
-
+                
                 <a href={props.data.git} target="_blank">
                     <SectionTitleShortDescription
                         title={githubTitle}
                         description={props.data.git} 
                     />
                 </a>
+                */ }
 
                 <a href={props.data.linkedin} target="_blank">
                     <SectionTitleShortDescription

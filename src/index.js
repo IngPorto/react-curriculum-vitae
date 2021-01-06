@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {data} from './data';
+import {data} from './data_manuel_v2';
 import Header from './containers/Header';
 import Body from './containers/Body';
 import Principal from './containers/Principal';
@@ -53,7 +53,8 @@ class Main extends Component{
                                         </Complementary>
                                     </Body>
                                     <div className="Footer mdc-layout-grid__cell--span-12">
-                                        <p>This page is created with <a href="https://reactjs.org/" target="_blank">ReactJS</a> and <a href="https://material.io" target="_blank">Material Design Web</a> by me ;)</p>
+                                        { /* <p>This page is created with <a href="https://reactjs.org/" target="_blank">ReactJS</a> and <a href="https://material.io" target="_blank">Material Design Web</a> by me ;)</p> */ }
+                                        { /* <p>Additional info: US Visa to travel, flexibility to travel and move temporarily or permanent to another city.</p>*/ }
                                     </div>
                                 </div>
                             </div>

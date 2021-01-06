@@ -1,8 +1,10 @@
 import React from 'react';
 import TextLayout from './TextLayout';
+import config from '../config';
+const dictionary = (require("../lang/" + config.lang + ".js")).default;
 
 function Hobbie(props){
-    const title = 'Hobbies:';
+    const title = dictionary.hobbies + ':';
     return(
         <div className="Hobbies mdc-layout-grid__cell--span-12">
             <div className="Hobbies-title">

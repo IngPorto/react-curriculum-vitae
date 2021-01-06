@@ -4,14 +4,16 @@
  * https://reactjs.org/docs/react-api.html#createelement
  */
 import React from 'react'
+import config from '../config';
+const dictionary = (require("../lang/" + config.lang + ".js")).default;
 
 function LevelProgressGenerator(props){
     const aptness = [
-            'Beginner', 
-            'Basic', 
-            'Intermediate', 
-            'Advanced', 
-            'Expert'
+            dictionary.beginner, 
+            dictionary.basic, 
+            dictionary.intermediate, 
+            dictionary.advanced, 
+            dictionary.expert
         ]
     const level = props.level;
     return(

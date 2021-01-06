@@ -1,9 +1,11 @@
 import React from 'react';
 import TopicSection from '../containers/TopicSection';
 import EducationItem from './EducationItem';
+import config from '../config';
+const dictionary = (require("../lang/" + config.lang + ".js")).default;
 
 function Education(props){
-    const titulo= 'Education';
+    const titulo= dictionary.education;
     return (
         <div className="Education mdc-layout-grid__cell--span-12">
             <TopicSection title={titulo}>
